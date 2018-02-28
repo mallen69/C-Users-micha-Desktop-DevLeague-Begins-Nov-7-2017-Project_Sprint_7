@@ -53,6 +53,7 @@ def importFeasibilityQuestionsCSV(importFilePath):
                 print ('\nReading csv record: ' + Fid)
                 Question_english = row[C_english_element]
                 Question_expression = row[C_expression_element]
+                #WRITE VARIABLES TO DATABASE:
                 VarDict = {} #init empty VarDict for expression
     #             build variable def. for db_val types, assume val obtained from fac. char table in db_val field, w/ fac_id as unique queryable field
     #             eval type based on type given. expect passed value to be val_type.value
@@ -98,6 +99,7 @@ def _HELPER_ImportBaseBMPsCSV_Expr (importLS, row, csvHeadersLS):
     VarDict = {} #init empty VarDict for expression
     #proce variable declaration. assume variable's value can be found in the facility_chars table
     retStatus = Expr.procInputVarDecs(VarDict, row[csvHeadersLS.index(importLS[0])], 'facility_chars', 'USEDECVAL', 'id', 'FLOAT')
+    print (VarDict)
     if isFuncStatusOK(retStatus[0]) == 0: #check if return status ok
         print (getFuncStatusFault(retStatus[0]) + '    Fix error and retry.')
         my_expr_id=-1234
