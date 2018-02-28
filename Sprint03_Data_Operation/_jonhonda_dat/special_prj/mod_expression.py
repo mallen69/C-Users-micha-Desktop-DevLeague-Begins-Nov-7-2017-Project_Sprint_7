@@ -46,13 +46,10 @@ def procInputVarDecs (VarDict, rawVarDecStr, WriteToTable, WriteToField, QryOnUn
 
 # WriteToTable & WriteToField are the table and field db_var type variable can be found at
 # QryOnUniqueField is field that we should query on when trying to retrieve val from db table and db field
-    print (rawVarDecStr)
     flg_USEDECVAL = (WriteToField == 'USEDECVAL') #set flag to true if we want to use declared variable name as name for writing field
-    print (flg_USEDECVAL)
     funcStatus = [1,''] #start with okay status
     ls_Vars = rawVarDecStr.split(',')
     for VarDecStr in ls_Vars:
-        print (VarDecStr)
         DELIMITER = '|' #DELIMITER BETWEEN VARIABLE TYPE AND VALUE (SEE EXPECTED FORMAT DISCUSSION IN ABOVE INTRO)
         mySplitter = VarDecStr.split(DELIMITER) #split declaration into its 2 parts
         if len(mySplitter) != 2:
@@ -62,7 +59,6 @@ def procInputVarDecs (VarDict, rawVarDecStr, WriteToTable, WriteToField, QryOnUn
             return (funcStatus,VarDict)
         if flg_USEDECVAL: #use declaration value as name for writing field
             WriteToField = mySplitter[1]
-            print('WriteToField: ', WriteToField, ' USEDECVAL IN: ', mySplitter)
         if mySplitter[0] == 'var': #then it's value is held in the database
             VarDict =  _add2VarDict(VarDict, mySplitter[1], 'val', WriteToTable,WriteToField, QryOnUniqueField, DataType)
         elif mySplitter[0] == 'exp': #then it's value is defined by a static database held expression

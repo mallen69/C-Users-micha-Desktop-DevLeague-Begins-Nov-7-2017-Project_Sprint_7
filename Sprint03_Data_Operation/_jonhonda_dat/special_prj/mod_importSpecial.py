@@ -99,7 +99,6 @@ def _HELPER_ImportBaseBMPsCSV_Expr (importLS, row, csvHeadersLS):
     VarDict = {} #init empty VarDict for expression
     #proce variable declaration. assume variable's value can be found in the facility_chars table
     retStatus = Expr.procInputVarDecs(VarDict, row[csvHeadersLS.index(importLS[0])], 'facility_chars', 'USEDECVAL', 'id', 'FLOAT')
-    print (VarDict)
     if isFuncStatusOK(retStatus[0]) == 0: #check if return status ok
         print (getFuncStatusFault(retStatus[0]) + '    Fix error and retry.')
         my_expr_id=-1234
