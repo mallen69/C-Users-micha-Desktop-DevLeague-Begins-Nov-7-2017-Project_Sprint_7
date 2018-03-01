@@ -53,6 +53,7 @@ def importFeasibilityQuestionsCSV(importFilePath):
                 print ('\nReading csv record: ' + Fid)
                 Question_english = row[C_english_element]
                 Question_expression = row[C_expression_element]
+                #WRITE VARIABLES TO DATABASE:
                 VarDict = {} #init empty VarDict for expression
     #             build variable def. for db_val types, assume val obtained from fac. char table in db_val field, w/ fac_id as unique queryable field
     #             eval type based on type given. expect passed value to be val_type.value
