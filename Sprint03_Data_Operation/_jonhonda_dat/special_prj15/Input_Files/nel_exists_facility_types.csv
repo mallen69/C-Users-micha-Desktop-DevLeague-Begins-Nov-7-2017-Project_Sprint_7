@@ -1,9 +1,0 @@
-﻿facility_types.Fac_Type,wrs_pollutant_risks.wrs_tss,wrs_pollutant_risks.wrs_p,wrs_pollutant_risks.wrs_n,wrs_pollutant_risks.wrs_nn,wrs_pollutant_risks.wrs_og,wrs_pollutant_risks.wrs_phmin,wrs_pollutant_risks.wrs_phmax,wrs_pollutant_risks.wrs_an,wrs_pollutant_risks.wrs_turbidity,wrs_pollutant_risks.wrs_cu,wrs_pollutant_risks.wrs_zn,wrs_pollutant_risks.wrs_fe,facility_type_has_nel.dummy_input
-Fire/Police Stations,1,1,1,1,1,1,1,1,1,0,0,0,0
-Wastewater Treatment Plants,1,1,1,1,1,1,1,1,1,1,1,0,0
-Bus Maintenance Facility,1,1,1,1,1,1,1,1,1,0,0,0,0
-Refuse Transfer Stations/Collection Yards/Centers,1,1,1,1,1,1,1,1,1,0,0,0,0
-Corporation Yards,1,1,1,1,1,1,1,1,1,0,0,0,0
-Other,1,1,1,1,1,1,1,1,1,0,0,0,0
-Closed Sanitary Landfill,1,1,1,1,1,1,1,1,1,0,0,1,0
-Golf Course,1,1,1,1,1,1,1,1,1,0,0,0,0
