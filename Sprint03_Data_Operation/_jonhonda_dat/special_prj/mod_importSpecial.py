@@ -108,7 +108,7 @@ def _HELPER_ImportBaseBMPsCSV_Expr (importLS, row, csvHeadersLS):
 
 def importBaseBMPsCSV(importFilePath):
     #define csv column constants:
-    C_feastest_StartCol = 19 #1st column holding feasibility test. assume remaining rows are all feasibility tests, identified by column name
+    C_feastest_StartCol = 20 #1st column holding feasibility test. assume remaining rows are all feasibility tests, identified by column name
     print ('Reading csv for import to base bmp tables')
     with open(importFilePath, 'rt', encoding='utf-8-sig') as csvfile:
         csvreader = csv.reader(csvfile,dialect='excel')
@@ -133,7 +133,7 @@ def importBaseBMPsCSV(importFilePath):
 
             #write pollutant removal rates to pollutant_removal_rates Table
             print ('Reading pollutant removal rate info...')
-            pollLS = ['r_tss','r_turbidity','r_og','r_fe','r_cu','r_zn','r_n','r_p','r_nn','r_an','r_phmax'] #list of pollutants corresponding to csv headr names
+            pollLS = ['r_tss','r_turbidity','r_og','r_fe','r_cu','r_zn','r_n','r_p','r_nn','r_an','r_phmin','r_phmax'] #list of pollutants corresponding to csv header names
             myRecDict = {rp:row[csvHeadersLS.index(rp)] for rp in pollLS} #create dictionary of pollutant values by looking up index of header corresponding to pollutant.
             myTable = Base.metadata.tables['pollutant_removal_rates']
             PRR_id= SQLA_main.insertupdateRec(myTable, myRecDict,(lambda expr_nameCol, expr_Val: expr_nameCol == expr_Val)(myTable.c['id'], -1234))
