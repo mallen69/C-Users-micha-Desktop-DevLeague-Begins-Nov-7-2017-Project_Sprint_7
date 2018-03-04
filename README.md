@@ -15,7 +15,7 @@
 |[Michael Allen](Sprint00_Meta_Content/00_Roadmaps_and_Blueprints/Michael_Allen.ipynb)| [**Exploratory Analysis & Some Statisitcal Concepts of Zillow Housing Dataset and a Separate Web Scraping Exercise**](https://github.com/mallen69/Project_Sprint_6) |[Journal](Sprint06_Preliminary_Findings_and_Hypothesis/Michael_Allen.ipynb)
 |[Runjini Murthy](Sprint00_Meta_Content/00_Roadmaps_and_Blueprints/Runjini_Murthy_Roadmap.ipynb)| [**Facebook Campaigns**](https://github.com/runjini/Runjini_Sprint_6) |[Journal](Sprint06_Preliminary_Findings_and_Hypothesis/Runjini_Murthy.ipynb)|
 |[Sheuli Molla](Sprint00_Meta_Content/00_Roadmaps_and_Blueprints/Sheuli_Molla_Roadmap.ipynb)| [**TBD**](https://github.com/sheulimolla/Sprint-6) |[Journal](Sprint06_Preliminary_Findings_and_Hypothesis/Sheuli_Molla.ipynb)|
-|[Tori Larson](Sprint00_Meta_Content/00_Roadmaps_and_Blueprints/Tori_Larson_Roadmap.ipynb)| [**TBD**](https://github.com/ToriLarson/6_Preliminary_Findings_Hypothesis) |[Journal](Sprint06_Preliminary_Findings_and_Hypothesis/Victoria_Larson.ipynb)|
+|[Tori Larson](Sprint00_Meta_Content/00_Roadmaps_and_Blueprints/Tori_Larson_Roadmap.ipynb)| [**Scraping and Parsing Income Data from the Web**](https://github.com/ToriLarson/6_Preliminary_Findings_Hypothesis) |[Journal](Sprint06_Preliminary_Findings_and_Hypothesis/Victoria_Larson.ipynb)|
 
 ## Sprint 5: Summarizing & Describing - [*Content*](Sprint05_Summarizing_Describing/00_Sprint_Classroom_Content.ipynb)
 |Author|Project|Docs|
